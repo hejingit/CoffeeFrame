@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="common/css/coffee.css" rel="stylesheet">
+<script src="jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="jquery/jquery-migrate-1.1.1.min.js" type="text/javascript"></script>
+
+<link href="bootstrap/3.3.4/css_default/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<script src="bootstrap/3.3.4/js/bootstrap.min.js"  type="text/javascript"></script>
+
+<!-- 引入layer插件 -->
+<script src="layer-v2.3/layer/layer.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	  $("#refund").click(function(){
+			top.layer.open({
+				  type: 2,
+				  area: ['700px', '330px'],
+				  fixed: false, 
+				  maxmin: true,
+				  content: 'iframe.html',
+				  end:function(){
+					var isNeedRefresh=$("#isNeedRefresh").val();
+						top.layer.msg(isNeedRefresh);
+					if(isNeedRefresh=="1"){
+						location.reload();
+					}
+				}
+				});
+		  
+	  });
+
+});
+
+</script>
+</head>
+<body>
+	<input id="isNeedRefresh" name="isNeedRefresh" value="0"/>
+	<a class="btn btn-primary" href="javascript:;" id="refund">退费</a>
+</body>
+</html>
