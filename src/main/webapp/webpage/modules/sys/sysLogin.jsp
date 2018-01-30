@@ -27,7 +27,7 @@
 <body class="white-bg">
     <div class="login-bg"></div>
     <div class="login-screen">
-        <h1 class="login-logo text-center"><img src="${ctxStatic}/common/img/login-logo.png" alt="咖啡易融" title="咖啡易融" /></h1>
+       <%--  <h1 class="login-logo text-center"><img src="${ctxStatic}/common/img/login-logo.png" alt="咖啡易融" title="咖啡易融" /></h1> --%>
         <form role="form" id="loginForm" action="${ctx}/login" method="post" autocomplete="off">
             <div class="form-group coffee-before">
                 <input type="text" class="login-input required" id="username" name="username" placeholder="用户名" autocomplete="off" />

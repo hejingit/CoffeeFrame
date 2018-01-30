@@ -42,7 +42,10 @@
 		<property name="targetDataSources">
 			<map key-type="java.lang.String">
 				<entry value-ref="DefaultDataSource" key="DefaultDataSource"></entry>
-				<entry value-ref="OtherDataSource" key="OtherDataSource"></entry>
+				<!-- 第二个数据源配置 -->
+				<!-- <entry value-ref="OtherDataSource" key="OtherDataSource"></entry> -->
+				
+				<!-- 第二个数据源配置 -->
 			</map>
 		</property>
 		<property name="defaultTargetDataSource" ref="DefaultDataSource"></property>      <!-- 默认使用DefaultDataSource的数据源 -->
