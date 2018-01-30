@@ -78,7 +78,7 @@
 		         <td  class="width-15 active">	<label class="table-label"><font color="red">*</font>归属机构</label></td>
 		         <td class="width-35"><sys:treeselect id="company" name="company.id" value="${user.company.id}" labelName="company.name" labelValue="${user.company.name}"
 						title="机构" url="/sys/office/treeData?type=1" cssClass="input-text required"/></td>
-				<td class="width-15 active"><label class="table-label"><font color="red">*</font>归属分校</label></td>
+				<td class="width-15 active"><label class="table-label"><font color="red">*</font>归属部门</label></td>
 		         <td class="width-35"><sys:treeselect id="office" name="office.id" value="${user.office.id}" labelName="office.name" labelValue="${user.office.name}"
 					title="分校" url="/sys/office/treeData?type=2" cssClass="input-text required" notAllowSelectParent="true"/></td>		
 		      </tr>

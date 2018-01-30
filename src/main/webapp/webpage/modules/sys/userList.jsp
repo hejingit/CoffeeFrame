@@ -27,7 +27,7 @@
 				</div>
 				<%--
 				<div class="coffee-form">
-					<span class="label-title">归属分校：</span>
+					<span class="label-title">归属部门：</span>
 					<sys:treeselect id="office" name="office.id" value="${user.office.id}" labelName="office.name" labelValue="${user.office.name}" title="分校" url="/sys/office/treeData?type=2" cssClass=" form-control input-sm" allowClear="true" notAllowSelectParent="true"/>
 				</div>
 				--%>
@@ -79,7 +79,7 @@
 				<th class="sort-column phone">邮箱</th>
 				<th class="sort-column mobile">手机</th>
 				<th class="sort-column c.name">归属机构</th>
-				<th class="sort-column o.name">归属分校</th>
+				<th class="sort-column o.name">归属部门</th>
 				<th class="text-center">操作</th>
 			</tr>
 		</thead>
