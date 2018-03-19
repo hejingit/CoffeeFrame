@@ -45,4 +45,5 @@
     
     <import resource="spring-mvc.xml"/>
     
+    <import resource="spring-dubbo.xml"/>
 </beans>
